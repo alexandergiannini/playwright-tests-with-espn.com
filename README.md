@@ -1,1 +1,1 @@
-## This is my repository for using Playwright with JavaScript/TypeScript, running against espn.com
+## This is my repository for using Playwright with TypeScript, running against espn.com

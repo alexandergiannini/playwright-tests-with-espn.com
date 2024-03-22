@@ -1,0 +1,22 @@
+{
+  "name": "playwright-tests-with-espn.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandergiannini/playwright-tests-with-espn.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandergiannini/playwright-tests-with-espn.com/issues"
+  },
+  "homepage": "https://github.com/alexandergiannini/playwright-tests-with-espn.com#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30"
+  }
+}

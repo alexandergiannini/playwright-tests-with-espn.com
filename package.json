@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/alexandergiannini/playwright-tests-with-espn.com#readme",
   "devDependencies": {
-    "@playwright/test": "^1.42.1",
+    "@playwright/test": "^1.47.0",
     "@types/node": "^20.11.30"
   }
 }

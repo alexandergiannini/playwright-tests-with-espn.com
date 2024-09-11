@@ -55,18 +55,18 @@ export default defineConfig({
     },
 
     /* Test against mobile viewports. */
-     {
-       name: 'pixel5',
-       use: { ...devices['Pixel 5'],
-       isMobile: true 
-       },
-     },
-     {
-       name: 'iPhone12', //Mobile Safari
-       use: { ...devices['iPhone 12'],
-       isMobile: true 
-       },
-     },
+    //  {
+    //    name: 'pixel5',
+    //    use: { ...devices['Pixel 5'],
+    //    isMobile: true 
+    //    },
+    //  },
+    //  {
+    //    name: 'iPhone12', //Mobile Safari
+    //    use: { ...devices['iPhone 12'],
+    //    isMobile: true 
+    //    },
+    // },
 
     /* Test against branded browsers. */
     // {

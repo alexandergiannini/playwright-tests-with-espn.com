@@ -16,19 +16,27 @@ test('conduct a search on the homepage', async ({ page }) => {
 });
 
 test('navigate to Lakers page via NBA dropdown', async ({ page }) => {
-  await page.getByLabel('NBA', { exact: true }).hover();
+  await page.getByRole('link', { name: 'NBA', exact: true }).hover();
   await page.getByRole('link', { name: 'Los Angeles Lakers', exact: true }).click();
   await expect(page).toHaveURL(/los-angeles-lakers/);
 });
 
-test('should select WNBA when hovering over Ellipses dropdown', async ({ page }) => {
-  await page.getByLabel('More Sports').hover();
-  await page.getByRole('link', { name: 'WNBA', exact: true }).click();
+test('should select WNBA Home when hovering over WNBA', async ({ page }) => {
+  await page.getByRole('link', { name: 'WNBA', exact: true }).hover();
+  await page.getByRole('link', { name: 'Home', exact: true }).click();
   await expect(page).toHaveURL(/wnba/);
 });
 
 test('should select Home when hovering over NBA dropdown', async ({ page }) => {
-  await page.getByLabel('NBA', { exact: true }).hover();
-  await page.getByRole('link', { name: 'Home' }).click();
+  await page.getByRole('link', { name: 'NBA', exact: true }).hover();
+  await page.getByRole('link', { name: 'Home', exact: true }).click();
   await expect(page).toHaveURL(/nba/);
+});
+
+test('should select Lebron James when on Lakers Roster Page', async ({ page }) => {
+  await page.getByRole('link', { name: 'NBA', exact: true }).hover();
+  await page.getByRole('link', { name: 'Los Angeles Lakers', exact: true }).click();
+  await page.getByRole('link', { name: 'Roster'}).click();
+  await page.getByRole('link', { name: 'Lebron James'}).click();
+  await expect(page).toHaveURL(/lebron-james/);
 });
